@@ -1,0 +1,140 @@
+/* === GLOBAL SETTINGS === */
+QWidget {
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    font-size: 13px;
+    color: #2C2C2C;
+    background-color: #F5F7FA;
+}
+
+/* === MAIN WINDOW === */
+QMainWindow {
+    background-color: #F2F5F9;
+}
+
+/* === TITLE LABELS === */
+QLabel#lblTitle {
+    color: #2C3E50;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+QLabel#lblSubtitle {
+    color: #7F8C8D;
+    font-size: 14px;
+}
+
+/* === INPUT FIELDS === */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #D6DDE5;
+    border-radius: 8px;
+    padding: 6px 12px;
+    selection-background-color: #4A90E2;
+}
+QLineEdit:focus {
+    border: 2px solid #4A90E2;
+}
+
+/* === BUTTONS === */
+QPushButton {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+QPushButton:hover {
+    background-color: #5CA0F2;
+}
+QPushButton:pressed {
+    background-color: #357ABD;
+}
+
+/* === DANGER BUTTONS === */
+QPushButton#btnXoa_BanDoc,
+QPushButton#btnXoa_Sach,
+QPushButton#btnXoaPhieu {
+    background-color: #E74C3C;
+}
+QPushButton#btnXoa_BanDoc:hover,
+QPushButton#btnXoa_Sach:hover,
+QPushButton#btnXoaPhieu:hover {
+    background-color: #EC7063;
+}
+QPushButton#btnXoa_BanDoc:pressed,
+QPushButton#btnXoa_Sach:pressed,
+QPushButton#btnXoaPhieu:pressed {
+    background-color: #C0392B;
+}
+
+/* === SUCCESS BUTTONS === */
+QPushButton#btnLuuThongTin {
+    background-color: #27AE60;
+}
+QPushButton#btnLuuThongTin:hover {
+    background-color: #2ECC71;
+}
+QPushButton#btnLuuThongTin:pressed {
+    background-color: #1E8449;
+}
+
+/* === TABLE WIDGETS === */
+QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E6ED;
+    border-radius: 6px;
+    gridline-color: #F0F3F7;
+    selection-background-color: rgba(74, 144, 226, 0.2);
+}
+
+QHeaderView::section {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 600;
+    padding: 8px;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: none;
+    background-color: transparent;
+}
+QTabBar::tab {
+    background-color: #E8ECF1;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-right: 4px;
+}
+QTabBar::tab:selected {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+}
+
+/* === SCROLLBAR === */
+QScrollBar:vertical {
+    border: none;
+    background: #F0F3F7;
+    width: 10px;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical {
+    background: #A8B8D0;
+    border-radius: 4px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #90A7C5;
+}
+
+/* === MESSAGEBOX === */
+QMessageBox {
+    background-color: #FFFFFF;
+}
+
+/* === DIALOG === */
+QDialog {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}

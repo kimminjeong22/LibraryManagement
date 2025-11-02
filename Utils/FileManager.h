@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <QDebug>  // ✅ THÊM DÒNG NÀY
 #include "../Models/Book.h"
 #include "../Models/BanDoc.h"
 #include "../Models/PhieuMuon.h"

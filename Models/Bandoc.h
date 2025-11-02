@@ -1,42 +1,43 @@
 #ifndef BANDOC_H
 #define BANDOC_H
 
-#include <iostream>
 #include <string>
+#include <iostream>
 #include <vector>
+
 using namespace std;
 
 class BanDoc {
 private:
     string maBD;
     string hoTen;
-    string lop;
+    string khoa;
     string sdt;
 
 public:
     // Constructor
-    BanDoc(string ma = "", string ten = "", string l = "", string soDT = "")
-        : maBD(ma), hoTen(ten), lop(l), sdt(soDT) {}
+    BanDoc(string ma = "", string ten = "", string k = "", string soDT = "")
+        : maBD(ma), hoTen(ten), khoa(k), sdt(soDT) {}
 
     // Getters
     string getMaBD() const { return maBD; }
     string getHoTen() const { return hoTen; }
-    string getLop() const { return lop; }
+    string getKhoa() const { return khoa; }  // ✅ ĐỔI TỪ "getLop()"
     string getSDT() const { return sdt; }
 
-    // Setters (THÊM MỚI - cần cho Qt)
+    // Setters
     void setMaBD(const string& ma) { maBD = ma; }
     void setHoTen(const string& ten) { hoTen = ten; }
-    void setLop(const string& l) { lop = l; }
+    void setKhoa(const string& k) { khoa = k; }  // ✅ ĐỔI TỪ "setLop()"
     void setSDT(const string& soDT) { sdt = soDT; }
 
     // Các phương thức
     void nhap(const vector<BanDoc>& dsBanDoc);
     void suaThongTin();
     void hienThi() const;
+
 };
 
 // Các hàm tiện ích
-
 
 #endif // BANDOC_H

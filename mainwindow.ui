@@ -14,39 +14,249 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Tìm kiếm</string>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>778</width>
+        <height>0</height>
+       </size>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLineEdit" name="lineEdit_TimKiem"/>
-    </item>
-    <item>
-     <widget class="QTableWidget" name="tableWidget"/>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnXoa">
-      <property name="text">
-       <string>Xóa</string>
+      <property name="currentIndex">
+       <number>2</number>
       </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnSua">
-      <property name="text">
-       <string>Sửa</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btnThem">
-      <property name="text">
-       <string>Thêm</string>
-      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Quản Lý Bạn Đọc</string>
+       </attribute>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>63</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Tìm Kiếm</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_TimKiem_BanDoc">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>461</width>
+          <height>28</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_BanDoc">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>591</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnThem_BanDoc">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>400</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Thêm</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSua_BanDoc">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>400</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sửa</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnXoa_BanDoc">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>400</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Xóa</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Quản Lý Sách</string>
+       </attribute>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>63</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Tìm Kiếm</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_TimKiem_Sach">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>40</y>
+          <width>461</width>
+          <height>28</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_Sach">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>591</width>
+          <height>241</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnThem_Sach">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>420</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Thêm</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnSua_Sach">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>420</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sửa</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnXoa_Sach">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>420</y>
+          <width>90</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Xóa</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Quản Lý Phiếu Mượn</string>
+       </attribute>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>11</y>
+          <width>63</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Tìm Kiếm</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnLapPhieu">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>350</y>
+          <width>123</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Lập Phiếu Mượn</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnTraSach">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>350</y>
+          <width>101</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Trả Sách</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnXoaPhieu">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>350</y>
+          <width>111</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Xóa Phiếu</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget_PhieuMuon">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>130</y>
+          <width>601</width>
+          <height>192</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_TimKiem_PhieuMuon">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>581</width>
+          <height>28</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>

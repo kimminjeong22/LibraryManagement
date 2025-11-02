@@ -1,15 +1,16 @@
 #include "BanDoc.h"
+
 #include <iostream>
-#include <iomanip>
 #include <algorithm>
+#include <iomanip>
+
 using namespace std;
-
-
 
 void BanDoc::nhap(const vector<BanDoc>& dsBanDoc) {
     while (true) {
         cout << "Nhap ma ban doc: ";
         cin >> maBD;
+
         bool trung = false;
         for (const auto& bd : dsBanDoc) {
             if (bd.getMaBD() == maBD) {
@@ -17,16 +18,18 @@ void BanDoc::nhap(const vector<BanDoc>& dsBanDoc) {
                 break;
             }
         }
+
         if (trung)
             cout << "Ma ban doc da ton tai! Vui long nhap ma khac.\n";
         else
             break;
     }
+
     cin.ignore();
     cout << "Nhap ho ten: ";
     getline(cin, hoTen);
-    cout << "Nhap lop/khoa: ";
-    getline(cin, lop);
+    cout << "Nhap khoa: ";
+    getline(cin, khoa);
     cout << "Nhap SDT: ";
     getline(cin, sdt);
 }
@@ -39,10 +42,10 @@ void BanDoc::suaThongTin() {
     getline(cin, tenMoi);
     if (!tenMoi.empty()) hoTen = tenMoi;
 
-    cout << "Lop moi (Enter bo qua): ";
-    string lopMoi;
-    getline(cin, lopMoi);
-    if (!lopMoi.empty()) lop = lopMoi;
+    cout << "Khoa moi (Enter bo qua): ";
+    string khoaMoi;
+    getline(cin, khoaMoi);
+    if (!khoaMoi.empty()) khoa = khoaMoi;
 
     cout << "SDT moi (Enter bo qua): ";
     string sdtMoi;
@@ -55,6 +58,6 @@ void BanDoc::suaThongTin() {
 void BanDoc::hienThi() const {
     cout << left << setw(10) << maBD
          << setw(25) << hoTen
-         << setw(15) << lop
+         << setw(15) << khoa
          << sdt << endl;
 }
