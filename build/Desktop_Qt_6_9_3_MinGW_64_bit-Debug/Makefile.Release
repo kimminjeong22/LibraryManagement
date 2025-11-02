@@ -782,6 +782,7 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		../../Utils/FileManager.h \
 		C:/Qt/6.9.3/mingw_64/include/QtCore/QDebug \
+		../../Utils/DateUtils.h \
 		C:/Qt/6.9.3/mingw_64/include/QtCore/QFile \
 		C:/Qt/6.9.3/mingw_64/include/QtCore/qfile.h \
 		C:/Qt/6.9.3/mingw_64/include/QtCore/qfiledevice.h \
@@ -845,7 +846,9 @@ release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/Qt/6.9.3/mingw_64/include/QtCore/qtimezone.h \
 		C:/Qt/6.9.3/mingw_64/include/QtWidgets/QHeaderView \
 		C:/Qt/6.9.3/mingw_64/include/QtWidgets/qheaderview.h \
-		C:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo
+		C:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo \
+		C:/Qt/6.9.3/mingw_64/include/QtWidgets/QSpinBox \
+		C:/Qt/6.9.3/mingw_64/include/QtWidgets/qspinbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\mainwindow.cpp
 
 release/BanDoc.o: ../../Models/BanDoc.cpp ../../Models/BanDoc.h

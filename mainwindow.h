@@ -7,10 +7,9 @@
 #include "Models/Book.h"
 #include "Models/PhieuMuon.h"
 
-// === THÊM 2 DÒNG NÀY VÀO ===
 #include <QStringList>
 class QPushButton;
-// =============================
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -38,7 +37,8 @@ private slots:
     void on_lineEdit_TimKiem_Sach_textChanged(const QString &text);
 
     // ===== PHIẾU MƯỢN SLOTS =====
-    void on_btnMuonSach_clicked();
+    // <<< SỬA LẠI TÊN SLOT ĐỂ KHỚP VỚI FILE .UI (TỪ "on_btnMuonSach_clicked") >>>
+    void on_btnLapPhieu_clicked();
     void on_btnTraSach_clicked();
     void on_btnXoaPhieu_clicked();
     void on_lineEdit_TimKiem_Phieu_textChanged(const QString &text);
@@ -55,11 +55,12 @@ private:
     void loadTableSach();
     void loadTablePhieuMuon();
 
-    // === VÀ THÊM 2 HÀM NÀY VÀO ===
-    // (Đây là 2 hàm bị thiếu khai báo)
     void applyButtonShadow(QPushButton* button);
     bool showBanDocDialog(const QString& title, const QStringList& dataIn, QStringList& dataOut);
-    // ================================
+    bool showSachDialog(const QString& title, const QStringList& dataIn, QStringList& dataOut);
+
+    // >>> THÊM DÒNG NÀY ĐỂ KHAI BÁO HELPER CHO PHIẾU MƯỢN
+    bool showMuonSachDialog(const QString& title, QStringList& dataOut);
 };
 
 #endif // MAINWINDOW_H
